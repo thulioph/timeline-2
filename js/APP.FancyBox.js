@@ -49,6 +49,9 @@ APP.FancyBox = {
     element = $('#'+id).attr('href');
 
     $.fancybox.open(element, {
+      helpers : { 
+        title : { type : 'inside' }
+      }, 
       // Insert title in element;
       beforeLoad: function() {
         this.title = $('#'+id).attr('title');
