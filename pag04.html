@@ -4,54 +4,9 @@
 <meta charset="UTF-8">
 <title>Cultura Afro-Brasileira</title>
 
-<script>
-	var canvas, stage, exportRoot;
-
-	function init() {
-		canvas = document.getElementById("canvas");
-		images = images||{};
-
-		var manifest = [
-			{src:"imagens/pag04/AbolicionistaAntonioBentodeSouzaeCastrodomíniopúblico.png", id:"AbolicionistaAntonioBentodeSouzaeCastrodomíniopúblico"},
-			{src:"imagens/pag04/CartaLeiÁureaDomíniopúblico.png", id:"CartaLeiÁureaDomíniopúblico"},
-			{src:"imagens/pag04/castroalves.png", id:"castroalves"},
-			{src:"imagens/pag04/Detalhe_quadro_Auguste_François_Biard_A_abolição_da_escravatura_unilabedu.png", id:"Detalhe_quadro_Auguste_François_Biard_A_abolição_da_escravatura_unilabedu"},
-			{src:"imagens/pag04/EugenismoFrancisGaltondomíniopúblico.png", id:"EugenismoFrancisGaltondomíniopúblico"},
-			{src:"imagens/pag04/Joaquim_Nabuco__1902_reproducao_fonte_catracalivrecom.png", id:"Joaquim_Nabuco__1902_reproducao_fonte_catracalivrecom"},
-			{src:"imagens/pag04/joseDoPatrociniowikipedia.png", id:"joseDoPatrociniowikipedia"},
-			{src:"imagens/pag04/PrincesaIsabelÉdouardViénotDomíniopúblico.png", id:"PrincesaIsabelÉdouardViénotDomíniopúblico"}
-		];
-
-		var loader = new createjs.LoadQueue(false);
-		loader.addEventListener("fileload", handleFileLoad);
-		loader.addEventListener("complete", handleComplete);
-		loader.loadManifest(manifest);
-	}
-
-	function handleFileLoad(evt) {
-		if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
-	}
-
-	function handleComplete() {
-		exportRoot = new lib.botao4NovoHTML();
-
-		stage = new createjs.Stage(canvas);
-		stage.addChild(exportRoot);
-		stage.update();
-		stage.enableMouseOver();
-
-		createjs.Ticker.setFPS(24);
-		createjs.Ticker.addEventListener("tick", stage);
-	}
-</script>
-
 </head>
 
 <body style="background-color:#D4D4D4">
-	<canvas id="canvas" width="974" height="640" style="background-color:#ffffff"></canvas>
-
-	<!-- Flash -->
-	<script>init();</script>
 
 	<!-- Lightbox -->
 	<div class="lightbox">

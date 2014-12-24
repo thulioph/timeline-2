@@ -4,55 +4,9 @@
 <meta charset="UTF-8">
 <title>Cultura Afro-Brasileira</title>
 
-<script>
-	var canvas, stage, exportRoot;
-
-	function init() {
-		canvas = document.getElementById("canvas");
-		images = images||{};
-
-		var manifest = [
-			{src:"imagens/pag07/Bitmap1.png", id:"Bitmap1"},
-			{src:"imagens/pag07/Bitmap2.png", id:"Bitmap2"},
-			{src:"imagens/pag07/Bitmap3.png", id:"Bitmap3"},
-			{src:"imagens/pag07/Bitmap4.png", id:"Bitmap4"},
-			{src:"imagens/pag07/IIMarchaNacionalContraoGenocídiodoPovoNegrolevou.png", id:"IIMarchaNacionalContraoGenocídiodoPovoNegrolevou"},
-			{src:"imagens/pag07/MarshaHunt3.png", id:"MarshaHunt3"},
-			{src:"imagens/pag07/Milton_Nascimento_2008.png", id:"Milton_Nascimento_2008"},
-			{src:"imagens/pag07/MNULogo.png", id:"MNULogo"},
-			{src:"imagens/pag07/revistaebano.png", id:"revistaebano"}
-		];
-
-		var loader = new createjs.LoadQueue(false);
-		loader.addEventListener("fileload", handleFileLoad);
-		loader.addEventListener("complete", handleComplete);
-		loader.loadManifest(manifest);
-	}
-
-	function handleFileLoad(evt) {
-		if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
-	}
-
-	function handleComplete() {
-		exportRoot = new lib.botao7NovoHTML();
-
-		stage = new createjs.Stage(canvas);
-		stage.addChild(exportRoot);
-		stage.update();
-		stage.enableMouseOver();
-
-		createjs.Ticker.setFPS(24);
-		createjs.Ticker.addEventListener("tick", stage);
-	}
-</script>
-
 </head>
 
 <body style="background-color:#D4D4D4">
-	<canvas id="canvas" width="974" height="640" style="background-color:#ffffff"></canvas>
-
-	<!-- Flash -->
-	<script>init();</script>
 
 	<!-- Lightbox -->
 	<div class="lightbox">

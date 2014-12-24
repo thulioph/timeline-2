@@ -4,57 +4,10 @@
 <meta charset="UTF-8">
 <title>Cultura Afro-Brasileira</title>
 
-<script>
-	var canvas, stage, exportRoot;
-
-	function init() {
-		canvas = document.getElementById("canvas");
-		images = images||{};
-
-		var manifest = [
-			{src:"imagens/pag05/Bitmap1.png", id:"Bitmap1"},
-			{src:"imagens/pag05/Bitmap2.png", id:"Bitmap2"},
-			{src:"imagens/pag05/Bitmap3.png", id:"Bitmap3"},
-			{src:"imagens/pag05/Bitmap4.png", id:"Bitmap4"},
-			{src:"imagens/pag05/Bitmap5.png", id:"Bitmap5"},
-			{src:"imagens/pag05/Bitmap6.png", id:"Bitmap6"},
-			{src:"imagens/pag05/Capacasagrandeesenzala.png", id:"Capacasagrandeesenzala"},
-			{src:"imagens/pag05/EscolaparanegrodmantidapalaFNB.png", id:"EscolaparanegrodmantidapalaFNB"},
-			{src:"imagens/pag05/GilbertoFreyre.png", id:"GilbertoFreyre"},
-			{src:"imagens/pag05/Jornalavozdaraça.jpg", id:"Jornalavozdaraça"},
-			{src:"imagens/pag05/Soldados_e_Oficiais_da_Legião_Negrasocialistatrabalhistablogspotcom.png", id:"Soldados_e_Oficiais_da_Legião_Negrasocialistatrabalhistablogspotcom"}
-		];
-
-		var loader = new createjs.LoadQueue(false);
-		loader.addEventListener("fileload", handleFileLoad);
-		loader.addEventListener("complete", handleComplete);
-		loader.loadManifest(manifest);
-	}
-
-	function handleFileLoad(evt) {
-		if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
-	}
-
-	function handleComplete() {
-		exportRoot = new lib.botao5NovoHTML();
-
-		stage = new createjs.Stage(canvas);
-		stage.addChild(exportRoot);
-		stage.update();
-		stage.enableMouseOver();
-
-		createjs.Ticker.setFPS(24);
-		createjs.Ticker.addEventListener("tick", stage);
-	}
-</script>
-
 </head>
 
 <body style="background-color:#D4D4D4">
-	<canvas id="canvas" width="974" height="640" style="background-color:#ffffff"></canvas>
 
-	<!-- Flash -->
-	<script>init();</script>
 
 	<!-- Lightbox -->
 	<div class="lightbox">
