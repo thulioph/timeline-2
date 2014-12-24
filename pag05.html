@@ -4,76 +4,57 @@
 <meta charset="UTF-8">
 <title>Cultura Afro-Brasileira</title>
 
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<style>.edgeLoad-EDGE-19006270 { visibility:hidden; }</style>
+
+<!-- Js -->
+<script src="js/vendor/edge/edge.5.0.1.min.js"></script>
+
 <script>
-	var canvas, stage, exportRoot;
-
-	function init() {
-		canvas = document.getElementById("canvas");
-		images = images||{};
-
-		var manifest = [
-			{src:"imagens/pag05/Bitmap1.png", id:"Bitmap1"},
-			{src:"imagens/pag05/Bitmap2.png", id:"Bitmap2"},
-			{src:"imagens/pag05/Bitmap3.png", id:"Bitmap3"},
-			{src:"imagens/pag05/Bitmap4.png", id:"Bitmap4"},
-			{src:"imagens/pag05/Bitmap5.png", id:"Bitmap5"},
-			{src:"imagens/pag05/Bitmap6.png", id:"Bitmap6"},
-			{src:"imagens/pag05/Capacasagrandeesenzala.png", id:"Capacasagrandeesenzala"},
-			{src:"imagens/pag05/EscolaparanegrodmantidapalaFNB.png", id:"EscolaparanegrodmantidapalaFNB"},
-			{src:"imagens/pag05/GilbertoFreyre.png", id:"GilbertoFreyre"},
-			{src:"imagens/pag05/Jornalavozdaraça.jpg", id:"Jornalavozdaraça"},
-			{src:"imagens/pag05/Soldados_e_Oficiais_da_Legião_Negrasocialistatrabalhistablogspotcom.png", id:"Soldados_e_Oficiais_da_Legião_Negrasocialistatrabalhistablogspotcom"}
-		];
-
-		var loader = new createjs.LoadQueue(false);
-		loader.addEventListener("fileload", handleFileLoad);
-		loader.addEventListener("complete", handleComplete);
-		loader.loadManifest(manifest);
-	}
-
-	function handleFileLoad(evt) {
-		if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
-	}
-
-	function handleComplete() {
-		exportRoot = new lib.botao5NovoHTML();
-
-		stage = new createjs.Stage(canvas);
-		stage.addChild(exportRoot);
-		stage.update();
-		stage.enableMouseOver();
-
-		createjs.Ticker.setFPS(24);
-		createjs.Ticker.addEventListener("tick", stage);
-	}
+	AdobeEdge.loadComposition('js/pag05/pag05', 'EDGE-19006270', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0",
+    maxW: "undefined",
+    width: "974px",
+    height: "640px"
+}, {dom: [ ]}, {dom: [ ]});
 </script>
 
 </head>
 
-<body style="background-color:#D4D4D4">
-	<canvas id="canvas" width="974" height="640" style="background-color:#ffffff"></canvas>
+<body style="margin:0;padding:0;">
+	<div id="Stage" class="EDGE-19006270">
+	</div>
 
-	<!-- Flash -->
-	<script>init();</script>
+	<!-- Modais -->
+	<div id="txt05_01_01" style="display:none;width:500px;">
+		<div>
+			<p>
+				Primeira fase do Movimento Negro organizado na República (1889-1937): da Primeira República ao Estado Novo (P- 102 A 107) In PETRÔNIO, Domingues. Movimento Negro Brasileiro: alguns apontamentos históricos. Revista Tempo, n. 23. Artigo recebido em abril de 2006 e aprovado para publicação em março de 2007. <a target="_blank" href="http://www.scielo.br/pdf/tem/v12n23/v12n23a07">http://www.scielo.br/pdf/tem/v12n23/v12n23a07</a> 
+			</p>
+		</div>
+	</div>
+
+	<div id="txt05_02_01" style="display:none;width:500px;">
+		<div>
+			<p>
+				Primeira fase do Movimento Negro organizado na República (1889-1937): da Primeira República ao Estado Novo (P- 102 A 107) In PETRÔNIO, Domingues. Movimento Negro Brasileiro: alguns apontamentos históricos. Revista Tempo, n. 23. Artigo recebido em abril de 2006 e aprovado para publicação em março de 2007. <a target="_blank" href="http://www.scielo.br/pdf/tem/v12n23/v12n23a07">http://www.scielo.br/pdf/tem/v12n23/v12n23a07</a> 
+			</p>
+		</div>
+	</div>
 
 	<!-- Lightbox -->
 	<div class="lightbox">
-		<!-- Pag05/01 -->
-		<a class="fancybox-button" id="page05_01_01" rel="fancybox-button" href="imagens/pag05/lightbox/pag01/pag05_01_01.jpg" title="Gilberto Freyre, conseguiu com 'Casa-grande & Senzala' superar o antigo modelo de racismo científico e o eugenismo propagado no Brasil, no início do século XX (Foto: Reprodução)">
+		<a class="fancybox-button" id="page05_01_01" rel="fancybox-button" href="images/pag05/lightbox/pag05_01_01.jpg" title="Gilberto Freyre, conseguiu com 'Casa-grande & Senzala' superar o antigo modelo de racismo científico e o eugenismo propagado no Brasil, no início do século XX (Foto: Reprodução)">
 		</a>
 
-		<a class="fancybox-button" id="page05_01_02" rel="fancybox-button" href="imagens/pag05/lightbox/pag01/pag05_01_02.jpg" title="Capa da primeira edição de 'Casa-grande & Senzala' (Foto: Divulgação)">
+		<a class="fancybox-button" id="page05_01_02" rel="fancybox-button" href="images/pag05/lightbox/pag05_01_02.jpg" title="Capa da primeira edição de 'Casa-grande & Senzala' (Foto: Divulgação)">
 		</a>
 
-		<!-- Pag05/02 -->
-		<a class="fancybox-button" id="page05_02_01" rel="fancybox-button" href="imagens/pag05/lightbox/pag02/pag05_02_01.jpg" title="Escola para negros mantida pala Frente Negra Brasileira (FNB) (Foto: Divulgação)">
-		</a>
-
-		<a class="fancybox-button" id="page05_02_02" rel="fancybox-button" href="imagens/pag05/lightbox/pag02/pag05_02_02.jpg" title="Jornal 'A voz da raça'. Fundado em 1933, o jornal é tido como um dos mais importantes do gênero, sendo bastante lido também fora da comunidade negra. A Voz da Raça circulou até 1937, totalizando 70 edições (Foto: Divulgação)">
-		</a>
-
-		<!-- Pag05/03 -->
-		<a class="fancybox-button" id="page05_03_01" rel="fancybox-button" href="imagens/pag05/lightbox/pag03/pag05_03_01.jpg" title="Soldados e Oficiais da Legião Negra (Foto: Divulgação)">
+		<a class="fancybox-button" id="page05_02_01" rel="fancybox-button" href="images/pag05/lightbox/pag05_02_01.jpg" title="Getúlio Vargas, presidente do Brasil (1930-1945;1951-1954), foi o articulador do Estado Novo (Foto: Reprodução)">
 		</a>
 	</div>
 </body>

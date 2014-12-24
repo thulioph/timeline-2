@@ -4,72 +4,105 @@
 <meta charset="UTF-8">
 <title>Cultura Afro-Brasileira</title>
 
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<style>.edgeLoad-EDGE-23181458 { visibility:hidden; }</style>
+
+<!-- Js -->
+<script src="js/vendor/edge/edge.5.0.1.min.js"></script>
+
 <script>
-	var canvas, stage, exportRoot;
-
-	function init() {
-		canvas = document.getElementById("canvas");
-		images = images||{};
-
-		var manifest = [
-			{src:"imagens/pag07/Bitmap1.png", id:"Bitmap1"},
-			{src:"imagens/pag07/Bitmap2.png", id:"Bitmap2"},
-			{src:"imagens/pag07/Bitmap3.png", id:"Bitmap3"},
-			{src:"imagens/pag07/Bitmap4.png", id:"Bitmap4"},
-			{src:"imagens/pag07/IIMarchaNacionalContraoGenocídiodoPovoNegrolevou.png", id:"IIMarchaNacionalContraoGenocídiodoPovoNegrolevou"},
-			{src:"imagens/pag07/MarshaHunt3.png", id:"MarshaHunt3"},
-			{src:"imagens/pag07/Milton_Nascimento_2008.png", id:"Milton_Nascimento_2008"},
-			{src:"imagens/pag07/MNULogo.png", id:"MNULogo"},
-			{src:"imagens/pag07/revistaebano.png", id:"revistaebano"}
-		];
-
-		var loader = new createjs.LoadQueue(false);
-		loader.addEventListener("fileload", handleFileLoad);
-		loader.addEventListener("complete", handleComplete);
-		loader.loadManifest(manifest);
-	}
-
-	function handleFileLoad(evt) {
-		if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
-	}
-
-	function handleComplete() {
-		exportRoot = new lib.botao7NovoHTML();
-
-		stage = new createjs.Stage(canvas);
-		stage.addChild(exportRoot);
-		stage.update();
-		stage.enableMouseOver();
-
-		createjs.Ticker.setFPS(24);
-		createjs.Ticker.addEventListener("tick", stage);
-	}
+	AdobeEdge.loadComposition('js/pag07/pag07', 'EDGE-23181458', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0",
+    maxW: "undefined",
+    width: "974px",
+    height: "640px"
+}, {dom: [ ]}, {dom: [ ]});
 </script>
 
 </head>
 
-<body style="background-color:#D4D4D4">
-	<canvas id="canvas" width="974" height="640" style="background-color:#ffffff"></canvas>
+<body style="margin:0;padding:0;">
+	<div id="Stage" class="EDGE-23181458">
+	</div>
 
-	<!-- Flash -->
-	<script>init();</script>
+	<!-- Modais -->
+	<div id="txt07_01_01" style="display:none;width:500px;">
+		<div>
+			<p>
+				PEREIRA. Amilcar Araujo.“O Mundo Negro”: a constituição do movimento negro contemporâneo no Brasil (1970-1995). Tese apresentada no Programa de Pós-graduação em História da Universidade federal Fluminense(2010) 268 fls.
+			</p>
+		</div>
+	</div>
+
+	<div id="txt07_02_02" style="display:none;width:500px;">
+			<div>
+				<p>
+					PEREIRA. Amilcar Araujo.“O Mundo Negro”: a constituição do movimento negro contemporâneo no Brasil (1970-1995). Tese apresentada no Programa de Pós-graduação em História da Universidade federal Fluminense(2010) 268 fls.Terceira fase do Movimento Negro organizado na República (1978-2000): do início do processo de redemocratização à República Nova (P- 111 A 119) In PETRÔNIO, Domingues. Movimento Negro Brasileiro: alguns apontamentos históricos. Revista Tempo, n. 23. Artigo recebido em abril de 2006 e aprovado para publicação em março de 2007, p-116 <a target="_blank" href="http://www.scielo.br/pdf/tem/v12n23/v12n23a07">http://www.scielo.br/pdf/tem/v12n23/v12n23a07</a> 
+				</p>
+			</div>
+	</div>
+
+	<div id="txt07_02_03" style="display:none;width:500px;">
+		<div>
+			<p>
+				Raça 
+
+				Lá vem a força, lá vem a magia
+				Que me incendeia o corpo de alegria
+				Lá vem a santa maldita euforia
+				Que me alucina, me joga e me rodopia. 
+
+				Lá vem o canto, o berro de fera
+				Lá vem a voz de qualquer primavera
+				Lá vem a unha rasgando a garganta
+				A fome, a fúria, o sangue que já se levanta. 
+
+				De onde vem essa coisa tão minha
+				Que me aquece e me faz carinho?
+				De onde vem essa coisa tão crua
+				Que me acorda e me põe no meio da rua? 
+
+				É um lamento, um canto mais puro
+				Que me ilumina acasa escura
+				É minha força, é nossa energia
+				Que vem de longe prá nos fazer companhia. 
+
+				É Clementina cantando bonito
+				As aventuras do seu povo aflito
+				É Seu Francisco, boné e cachimbo
+				Me ensinando que a luta é mesmo comigo. 
+
+				Todas Marias, Maria Dominga
+				Atraca Vilma e Tia Hercília
+				É Monsueto e é Grande Otelo
+				Atraca, atraca que o Naná vem chegando 
+
+				(Disponível em <a target="_blank" href="http://letras.mus.br/miltonnascimento/843341/">http://letras.mus.br/miltonnascimento/843341/</a>)
+			</p>
+		</div>
+	</div>
+
+	<div id="txt07_03_04" style="display:none;width:500px;">
+		<div>
+			<p>
+				FARIAS, Paula; AMÉRICO, Jorge e BELCHIOR ,Douglas."A Bahia está mergulhada num mar de sangue". In Brasil de Fato: uma visão popular do Brasil e do mundo. , São Paulo, 2014. Disponível em <a target="_blank" href="http://www.brasildefato.com.br/node/29938">http://www.brasildefato.com.br/node/29938</a>. Acesso em 27.set.2014
+			</p>
+		</div>
+	</div>
 
 	<!-- Lightbox -->
 	<div class="lightbox">
-		<!-- Pag07/01 -->
-		<a class="fancybox-button" id="page07_01_01" rel="fancybox-button" href="imagens/pag07/lightbox/pag01/pag07_01_01.jpg" title="Logomarca do Movimento Negro Unificado (MNU) (Imagem: Divulgação)">
+		<a class="fancybox-button" id="page07_01_01" rel="fancybox-button" href="images/pag07/lightbox/pag07_01_01.jpg" title="Logomarca do Movimento Negro Unificado (MNU) (Imagem: Divulgação)">
 		</a>
 
-		<!-- Pag07/02 -->
-		<a class="fancybox-button" id="page07_02_01" rel="fancybox-button" href="imagens/pag07/lightbox/pag02/pag07_02_01.jpg" title="O movimento negro ganhou força com a Revista Ébano (Imagem: Divulgação)">
+		<a class="fancybox-button" id="page07_02_01" rel="fancybox-button" href="images/pag07/lightbox/pag07_02_01.jpg" title="Milton Nascimento é um dos responsáveis pela letra da música 'Raça' que trata a luta do negro no Brasil desde o período da escravidão (Imagem: Reprodução)">
 		</a>
 
-		<!-- Pag07/03 -->
-		<a class="fancybox-button" id="page07_03_01" rel="fancybox-button" href="imagens/pag07/lightbox/pag03/pag07_03_01.jpg" title="Milton Nascimento é um dos responsáveis pela letra da música "Raça" que trata a luta do negro no Brasil desde o período da escravidão (Imagem: Reprodução)">
-		</a>
-
-		<!-- Pag07/04 -->
-		<a class="fancybox-button" id="page07_04_01" rel="fancybox-button" href="imagens/pag07/lightbox/pag04/pag07_04_01.jpg" title="A II Marcha Internacional contra o Genocídio do Povo Negro teve como tema 'A luta transnacional contra o Racismo, a Diáspora Negra contra o Genocídio' (Imagem: Divulgação)">
+		<a class="fancybox-button" id="page07_03_01" rel="fancybox-button" href="images/pag07/lightbox/pag07_03_01.jpg" title="A II Marcha Internacional contra o Genocídio do Povo Negro teve como tema 'A luta transnacional contra o Racismo, a Diáspora Negra contra o Genocídio' (Imagem: Divulgação)">
 		</a>
 	</div>
 </body>
