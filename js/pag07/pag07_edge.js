@@ -3,10 +3,10 @@
 (function (compId) {
 
     "use strict";
-    var im='images/',
+    var im='images/pag07/',
         aud='media/',
         vid='media/',
-        js='js/',
+        js='js/pag07/',
         fonts = {
         },
         opts = {
@@ -1285,5 +1285,5 @@
 
     AdobeEdge.registerCompositionDefn(compId, symbols, fonts, scripts, resources, opts);
 
-    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("botao07_edgeActions.js");
+    if (!window.edge_authoring_mode) AdobeEdge.getComposition(compId).load("js/pag07/pag07_edgeActions.js");
 })("EDGE-23181458");
