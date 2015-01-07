@@ -448,7 +448,7 @@ th {
   padding: 0;
   border: none;
   outline: none;
-  background-color: #872f2f;
+  background-color: #b64949;
   background-position: center;
   top: 0; }
 
@@ -785,6 +785,7 @@ p {
     bottom: -200px; }
 
 .click-animation {
+  cursor: pointer;
   width: 100%;
   height: 55px;
   background-color: transparent;
@@ -829,6 +830,16 @@ p {
   height: 133px;
   margin: -11px 20px 0 20px;
   position: relative; }
+  .nav-item:nth-child(1) .js-show { top: -280px; }
+  .nav-item:nth-child(2) .js-show { top: -210px; }
+  .nav-item:nth-child(3) .js-show { top: -275px; }
+  .nav-item:nth-child(4) .js-show { top: -200px; }
+  .nav-item:nth-child(5) .js-show { top: -230px; }
+  .nav-item:nth-child(6) .js-show { top: -230px; }
+  .nav-item:nth-child(7) .js-show { top: -255px; }
+  .nav-item:nth-child(8) .js-show { top: -235px; }
+  .nav-item:nth-child(9) .js-show { top: -205px; }
+  .nav-item:nth-child(10) .js-show { top: -205px; }
   .nav-item::before {
     content: attr(data-start);
     top: -34px;
@@ -846,18 +857,6 @@ p {
       top: -30px;
       left: 230px;
     }
-  .nav-item:nth-child(6) figcaption {
-    font-size: 1em; }
-  .nav-item:nth-child(7) figcaption {
-    font-size: 1em; }
-  .nav-item:nth-child(8) figcaption {
-    font-size: 1em; }
-  .nav-item:nth-child(8) aside {
-    font-size: .9em; }
-  .nav-item:nth-child(9) figcaption {
-    font-size: 1em; }
-  .nav-item:nth-child(10) figcaption {
-    font-size: 1em; }
 
 .nav-link {
   display: block;
@@ -877,21 +876,21 @@ p {
     font-family: "LithosProRegular";
     width: 120px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 18px;
     margin-top: 50px;
     margin-left: 10px;
     float: right; }
 
 .text-complementary {
   position: absolute;
-  height: 100px;
+  min-height: 100px;
   width: 150px;
   padding: 30px 10px 10px 10px;
   background-color: #b64949;
   right: 0;
   text-align: center;
   font-family: "LithosProRegular";
-  font-size: 1.1em;
+  font-size: 18px;
   color: #ffffff;
   border-radius: 10px;
   -webkit-transition: all, 0.2s, linear, 0.2s;
@@ -917,6 +916,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
+    font-size: .7em !important;
     text-align: center; }
   .text-complementary.js-hide {
     opacity: 0;
@@ -929,7 +929,6 @@ p {
   max-width: 1024px;
   width: 100%;
   height: 100%;
-  padding: 10px 0 80px 0;
   position: relative;
   margin: 0 auto;
   display: table;
@@ -947,7 +946,7 @@ p {
   .content figure {
     text-align: center; }
   .content p {
-    font-size: 1.8em;
+    font-size: 18px;
     text-align: left;
     color: #333333;
     line-height: 1.4em;
@@ -1012,7 +1011,7 @@ p {
   text-transform: uppercase;
   font-family: "LithosPro850"; }
 .page-internal p {
-  font-size: 1.5em; }
+  font-size: 18px; }
 .page-internal span {
   color: #990000; }
 .page-internal a {
