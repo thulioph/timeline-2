@@ -60,6 +60,7 @@
                             display: 'none',
                             type: 'rect',
                             rect: ['449px', '25px', '135px', '41px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             opacity: '0',
                             fill: ["rgba(192,192,192,1)"],
                             stroke: [0,"rgb(0, 0, 0)","none"]
@@ -79,6 +80,7 @@
                             display: 'none',
                             type: 'rect',
                             rect: ['713px', '25px', '121px', '41px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             opacity: '0',
                             fill: ["rgba(192,192,192,1)"],
                             stroke: [0,"rgb(0, 0, 0)","none"]
@@ -87,7 +89,7 @@
                             id: 'texto09_01_01',
                             display: 'none',
                             type: 'text',
-                            rect: ['-905px', '131px', '494px', '25px', 'auto', 'auto'],
+                            rect: ['-905px', '131px', '488px', '25px', 'auto', 'auto'],
                             text: "Pela primeira vez na história do Brasil, a maioria da população no país se identificou como negra e parda. Esse aumento é significativo já que a proporção de brasileiros que se definiram como negros ou pardos aumentou de 44,7% para 50,7%, desde 2000. ",
                             align: "justify",
                             font: ['Verdana, Geneva, sans-serif', [20, "px"], "rgba(53,53,53,1)", "400", "none solid rgb(53, 53, 53)", "normal", "break-word", ""],
@@ -105,6 +107,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['24px', '208px', '360px', '330px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem09_01_01.png",'0px','0px']
                         },
                         {
@@ -129,6 +132,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['368px', '173px', '580px', '280px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem09_01_03.png",'0px','0px']
                         },
                         {
@@ -156,6 +160,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['132px', '139px', '830px', '170px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem09_02_01.png",'0px','0px']
                         },
                         {
@@ -180,6 +185,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['24px', '471px', '633px', '131px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem09_02_02.png",'0px','0px']
                         },
                         {
@@ -204,6 +210,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['415px', '134px', '532px', '410px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem09_03_01.png",'0px','0px']
                         },
                         {
@@ -217,12 +224,14 @@
                         },
                         {
                             id: 'avancar',
+                            display: 'none',
                             type: 'image',
                             rect: ['936px', '45px', '20px', '41px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"avancar.png",'0px','0px']
                         },
                         {
                             id: 'voltar',
+                            display: 'none',
                             type: 'image',
                             rect: ['15px', '45px', '20px', '41px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"voltar.png",'0px','0px']
@@ -292,24 +301,24 @@
                             'none'
                         ],
                         [
-                            "eid24",
+                            "eid2",
                             "opacity",
-                            1400,
+                            0,
                             400,
                             "linear",
-                            "${imagem09_01_01}",
-                            '0.000000',
+                            "${borda}",
+                            '0',
                             '1'
                         ],
                         [
-                            "eid25",
+                            "eid3",
                             "opacity",
-                            3790,
+                            10620,
                             400,
                             "linear",
-                            "${imagem09_01_01}",
+                            "${borda}",
                             '1',
-                            '0.000000'
+                            '0'
                         ],
                         [
                             "eid108",
@@ -702,6 +711,16 @@
                             '0.000000'
                         ],
                         [
+                            "eid169",
+                            "width",
+                            2800,
+                            0,
+                            "linear",
+                            "${texto09_01_01}",
+                            '488px',
+                            '488px'
+                        ],
+                        [
                             "eid123",
                             "display",
                             0,
@@ -728,6 +747,56 @@
                             0,
                             "linear",
                             "${imagem09_01_01}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid136",
+                            "display",
+                            600,
+                            0,
+                            "linear",
+                            "${_1}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid137",
+                            "display",
+                            10365,
+                            0,
+                            "linear",
+                            "${_1}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid112",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${imagem09_03_01}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid104",
+                            "display",
+                            8175,
+                            0,
+                            "linear",
+                            "${imagem09_03_01}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid105",
+                            "display",
+                            9765,
+                            0,
+                            "linear",
+                            "${imagem09_03_01}",
                             'block',
                             'none'
                         ],
@@ -772,12 +841,32 @@
                             '0.000000'
                         ],
                         [
-                            "eid1",
+                            "eid157",
                             "display",
-                            11020,
+                            0,
                             0,
                             "linear",
-                            "${borda}",
+                            "${avancar}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid158",
+                            "display",
+                            2800,
+                            0,
+                            "linear",
+                            "${avancar}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid160",
+                            "display",
+                            8975,
+                            0,
+                            "linear",
+                            "${avancar}",
                             'block',
                             'none'
                         ],
@@ -802,24 +891,34 @@
                             '0.000000'
                         ],
                         [
-                            "eid81",
-                            "opacity",
-                            5385,
-                            400,
+                            "eid124",
+                            "display",
+                            0,
+                            0,
                             "linear",
-                            "${texto09_02_02}",
-                            '0.000000',
-                            '1'
+                            "${imagem09_01_02}",
+                            'none',
+                            'none'
                         ],
                         [
-                            "eid82",
-                            "opacity",
-                            6580,
-                            400,
+                            "eid18",
+                            "display",
+                            1700,
+                            0,
                             "linear",
-                            "${texto09_02_02}",
-                            '1',
-                            '0.000000'
+                            "${imagem09_01_02}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid19",
+                            "display",
+                            3890,
+                            0,
+                            "linear",
+                            "${imagem09_01_02}",
+                            'block',
+                            'none'
                         ],
                         [
                             "eid98",
@@ -842,134 +941,54 @@
                             '0.000000'
                         ],
                         [
-                            "eid121",
+                            "eid1",
                             "display",
-                            0,
+                            11020,
                             0,
                             "linear",
-                            "${imagem09_01_04}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid34",
-                            "display",
-                            2400,
-                            0,
-                            "linear",
-                            "${imagem09_01_04}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid35",
-                            "display",
-                            3195,
-                            0,
-                            "linear",
-                            "${imagem09_01_04}",
+                            "${borda}",
                             'block',
                             'none'
                         ],
                         [
-                            "eid6",
+                            "eid24",
                             "opacity",
-                            200,
+                            1400,
                             400,
                             "linear",
-                            "${titulo09}",
+                            "${imagem09_01_01}",
                             '0.000000',
                             '1'
                         ],
                         [
-                            "eid7",
+                            "eid25",
                             "opacity",
-                            10365,
+                            3790,
                             400,
                             "linear",
-                            "${titulo09}",
+                            "${imagem09_01_01}",
                             '1',
                             '0.000000'
                         ],
                         [
-                            "eid12",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${texto09_01_01}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid13",
-                            "display",
-                            800,
-                            0,
-                            "linear",
-                            "${texto09_01_01}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid14",
-                            "display",
-                            4785,
-                            0,
-                            "linear",
-                            "${texto09_01_01}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid2",
+                            "eid73",
                             "opacity",
-                            0,
+                            5385,
                             400,
                             "linear",
-                            "${borda}",
-                            '0',
+                            "${imagem09_02_03}",
+                            '0.000000',
                             '1'
                         ],
                         [
-                            "eid3",
+                            "eid74",
                             "opacity",
-                            10620,
+                            6580,
                             400,
                             "linear",
-                            "${borda}",
+                            "${imagem09_02_03}",
                             '1',
-                            '0'
-                        ],
-                        [
-                            "eid115",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${texto09_02_02}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid79",
-                            "display",
-                            5385,
-                            0,
-                            "linear",
-                            "${texto09_02_02}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid80",
-                            "display",
-                            6975,
-                            0,
-                            "linear",
-                            "${texto09_02_02}",
-                            'block',
-                            'none'
+                            '0.000000'
                         ],
                         [
                             "eid118",
@@ -1002,6 +1021,66 @@
                             'none'
                         ],
                         [
+                            "eid115",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${texto09_02_02}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid79",
+                            "display",
+                            5385,
+                            0,
+                            "linear",
+                            "${texto09_02_02}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid80",
+                            "display",
+                            6975,
+                            0,
+                            "linear",
+                            "${texto09_02_02}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid156",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${voltar}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid159",
+                            "display",
+                            6185,
+                            0,
+                            "linear",
+                            "${voltar}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid161",
+                            "display",
+                            11020,
+                            0,
+                            "linear",
+                            "${voltar}",
+                            'block',
+                            'none'
+                        ],
+                        [
                             "eid40",
                             "opacity",
                             2400,
@@ -1022,22 +1101,22 @@
                             '0.000000'
                         ],
                         [
-                            "eid73",
+                            "eid81",
                             "opacity",
                             5385,
                             400,
                             "linear",
-                            "${imagem09_02_03}",
+                            "${texto09_02_02}",
                             '0.000000',
                             '1'
                         ],
                         [
-                            "eid74",
+                            "eid82",
                             "opacity",
                             6580,
                             400,
                             "linear",
-                            "${imagem09_02_03}",
+                            "${texto09_02_02}",
                             '1',
                             '0.000000'
                         ],
@@ -1152,84 +1231,84 @@
                             '0.000000'
                         ],
                         [
-                            "eid124",
+                            "eid121",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${imagem09_01_02}",
+                            "${imagem09_01_04}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid18",
+                            "eid34",
                             "display",
-                            1700,
+                            2400,
                             0,
                             "linear",
-                            "${imagem09_01_02}",
+                            "${imagem09_01_04}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid19",
+                            "eid35",
                             "display",
-                            3890,
+                            3195,
                             0,
                             "linear",
-                            "${imagem09_01_02}",
+                            "${imagem09_01_04}",
                             'block',
                             'none'
                         ],
                         [
-                            "eid112",
+                            "eid12",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${imagem09_03_01}",
+                            "${texto09_01_01}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid104",
+                            "eid13",
                             "display",
-                            8175,
+                            800,
                             0,
                             "linear",
-                            "${imagem09_03_01}",
+                            "${texto09_01_01}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid105",
+                            "eid14",
                             "display",
-                            9765,
+                            4785,
                             0,
                             "linear",
-                            "${imagem09_03_01}",
+                            "${texto09_01_01}",
                             'block',
                             'none'
                         ],
                         [
-                            "eid136",
-                            "display",
-                            600,
-                            0,
+                            "eid6",
+                            "opacity",
+                            200,
+                            400,
                             "linear",
-                            "${_1}",
-                            'none',
-                            'block'
+                            "${titulo09}",
+                            '0.000000',
+                            '1'
                         ],
                         [
-                            "eid137",
-                            "display",
+                            "eid7",
+                            "opacity",
                             10365,
-                            0,
+                            400,
                             "linear",
-                            "${_1}",
-                            'block',
-                            'none'
+                            "${titulo09}",
+                            '1',
+                            '0.000000'
                         ]
                     ]
                 }

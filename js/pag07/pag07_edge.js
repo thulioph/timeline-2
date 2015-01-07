@@ -65,13 +65,14 @@
                             display: 'none',
                             type: 'image',
                             rect: ['590px', '155px', '235px', '230px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem07_01_02.png",'0px','0px']
                         },
                         {
                             id: 'texto07_01_02',
                             display: 'none',
                             type: 'text',
-                            rect: ['497px', '395px', '439px', '18px', 'auto', 'auto'],
+                            rect: ['497px', '395px', '440px', '18px', 'auto', 'auto'],
                             text: "Em 7 de Julho de 1978,  um ato público organizado em São Paulo contra a discriminação sofrida por quatro jovens negros no Clube de Regatas Tietê, deu origem ao Movimento Negro Unificado Contra a Discriminação Racial (MNU). A data, posteriormente, ficaria conhecida como o Dia Nacional de Luta Contra o Racismo.",
                             align: "justify",
                             font: ['Verdana, Geneva, sans-serif', [18, "px"], "rgba(52,52,52,1.00)", "400", "none solid rgb(153, 0, 0)", "normal", "break-word", ""],
@@ -82,6 +83,7 @@
                             display: 'none',
                             type: 'rect',
                             rect: ['39px', '429px', '63px', '29px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             opacity: '0',
                             fill: ["rgba(192,192,192,1)"],
                             stroke: [0,"rgb(0, 0, 0)","none"]
@@ -105,6 +107,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['531px', '246px', '430px', '374px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem07_02_01.png",'0px','0px']
                         },
                         {
@@ -142,6 +145,7 @@
                             display: 'none',
                             type: 'rect',
                             rect: ['756px', '216px', '84px', '29px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             opacity: '0',
                             fill: ["rgba(192,192,192,1)"],
                             stroke: [0,"rgb(0, 0, 0)","none"]
@@ -151,6 +155,7 @@
                             display: 'none',
                             type: 'rect',
                             rect: ['114px', '517px', '71px', '29px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             opacity: '0',
                             fill: ["rgba(192,192,192,1)"],
                             stroke: [0,"rgb(0, 0, 0)","none"]
@@ -168,6 +173,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['16px', '212px', '710px', '360px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem07_03_01.png",'0px','0px']
                         },
                         {
@@ -183,19 +189,22 @@
                             id: '_4',
                             display: 'none',
                             type: 'rect',
-                            rect: ['114px', '517px', '71px', '29px', 'auto', 'auto'],
+                            rect: ['103px', '215px', '71px', '29px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             opacity: '0',
                             fill: ["rgba(192,192,192,1)"],
                             stroke: [0,"rgb(0, 0, 0)","none"]
                         },
                         {
                             id: 'avancar',
+                            display: 'none',
                             type: 'image',
                             rect: ['936px', '45px', '20px', '41px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"avancar.png",'0px','0px']
                         },
                         {
                             id: 'voltar',
+                            display: 'none',
                             type: 'image',
                             rect: ['15px', '45px', '20px', '41px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"voltar.png",'0px','0px']
@@ -235,34 +244,44 @@
                             '0.000000'
                         ],
                         [
-                            "eid159",
-                            "display",
-                            0,
-                            0,
+                            "eid11",
+                            "left",
+                            800,
+                            500,
                             "linear",
-                            "${imagem07_03_01}",
-                            'none',
-                            'none'
+                            "${texto07_01_01}",
+                            '-905px',
+                            '45px'
                         ],
                         [
-                            "eid109",
-                            "display",
-                            6845,
-                            0,
+                            "eid12",
+                            "left",
+                            1300,
+                            100,
                             "linear",
-                            "${imagem07_03_01}",
-                            'none',
-                            'block'
+                            "${texto07_01_01}",
+                            '45px',
+                            '35px'
                         ],
                         [
-                            "eid110",
-                            "display",
-                            7640,
-                            0,
+                            "eid13",
+                            "left",
+                            2890,
+                            100,
                             "linear",
-                            "${imagem07_03_01}",
-                            'block',
-                            'none'
+                            "${texto07_01_01}",
+                            '35px',
+                            '45px'
+                        ],
+                        [
+                            "eid14",
+                            "left",
+                            2990,
+                            500,
+                            "linear",
+                            "${texto07_01_01}",
+                            '45px',
+                            '-905px'
                         ],
                         [
                             "eid167",
@@ -585,6 +604,26 @@
                             '985px'
                         ],
                         [
+                            "eid88",
+                            "opacity",
+                            4090,
+                            400,
+                            "linear",
+                            "${texto07_02_03}",
+                            '0.000000',
+                            '1'
+                        ],
+                        [
+                            "eid89",
+                            "opacity",
+                            5250,
+                            400,
+                            "linear",
+                            "${texto07_02_03}",
+                            '1',
+                            '0.000000'
+                        ],
+                        [
                             "eid30",
                             "opacity",
                             1700,
@@ -775,6 +814,56 @@
                             '0.000000'
                         ],
                         [
+                            "eid170",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${avancar}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid172",
+                            "display",
+                            2100,
+                            0,
+                            "linear",
+                            "${avancar}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid174",
+                            "display",
+                            7240,
+                            0,
+                            "linear",
+                            "${avancar}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid111",
+                            "opacity",
+                            6845,
+                            400,
+                            "linear",
+                            "${imagem07_03_01}",
+                            '0.000000',
+                            '1'
+                        ],
+                        [
+                            "eid112",
+                            "opacity",
+                            7245,
+                            400,
+                            "linear",
+                            "${imagem07_03_01}",
+                            '1',
+                            '0.000000'
+                        ],
+                        [
                             "eid158",
                             "display",
                             0,
@@ -801,16 +890,6 @@
                             0,
                             "linear",
                             "${texto07_03_02}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid1",
-                            "display",
-                            8895,
-                            0,
-                            "linear",
-                            "${borda}",
                             'block',
                             'none'
                         ],
@@ -845,122 +924,112 @@
                             'none'
                         ],
                         [
-                            "eid11",
-                            "left",
-                            800,
-                            500,
+                            "eid171",
+                            "display",
+                            0,
+                            0,
                             "linear",
-                            "${texto07_01_01}",
-                            '-905px',
-                            '45px'
+                            "${voltar}",
+                            'none',
+                            'none'
                         ],
                         [
-                            "eid12",
-                            "left",
-                            1300,
-                            100,
+                            "eid173",
+                            "display",
+                            4877,
+                            0,
                             "linear",
-                            "${texto07_01_01}",
-                            '45px',
-                            '35px'
+                            "${voltar}",
+                            'none',
+                            'block'
                         ],
                         [
-                            "eid13",
-                            "left",
-                            2890,
-                            100,
+                            "eid175",
+                            "display",
+                            8895,
+                            0,
                             "linear",
-                            "${texto07_01_01}",
-                            '35px',
-                            '45px'
+                            "${voltar}",
+                            'block',
+                            'none'
                         ],
                         [
-                            "eid14",
-                            "left",
-                            2990,
-                            500,
+                            "eid73",
+                            "display",
+                            0,
+                            0,
                             "linear",
-                            "${texto07_01_01}",
-                            '45px',
-                            '-905px'
+                            "${texto07_02_02}",
+                            'none',
+                            'none'
                         ],
                         [
-                            "eid88",
-                            "opacity",
-                            4090,
-                            400,
+                            "eid74",
+                            "display",
+                            3490,
+                            0,
                             "linear",
-                            "${texto07_02_03}",
-                            '0.000000',
-                            '1'
+                            "${texto07_02_02}",
+                            'none',
+                            'block'
                         ],
                         [
-                            "eid89",
-                            "opacity",
-                            5250,
-                            400,
-                            "linear",
-                            "${texto07_02_03}",
-                            '1',
-                            '0.000000'
-                        ],
-                        [
-                            "eid105",
-                            "left",
+                            "eid75",
+                            "display",
                             6245,
-                            500,
+                            0,
                             "linear",
-                            "${texto07_03_01}",
-                            '-905px',
-                            '45px'
+                            "${texto07_02_02}",
+                            'block',
+                            'none'
                         ],
                         [
-                            "eid106",
-                            "left",
-                            6745,
-                            100,
+                            "eid159",
+                            "display",
+                            0,
+                            0,
                             "linear",
-                            "${texto07_03_01}",
-                            '45px',
-                            '35px'
+                            "${imagem07_03_01}",
+                            'none',
+                            'none'
                         ],
                         [
-                            "eid107",
-                            "left",
+                            "eid109",
+                            "display",
+                            6845,
+                            0,
+                            "linear",
+                            "${imagem07_03_01}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid110",
+                            "display",
                             7640,
-                            100,
+                            0,
                             "linear",
-                            "${texto07_03_01}",
-                            '35px',
-                            '45px'
+                            "${imagem07_03_01}",
+                            'block',
+                            'none'
                         ],
                         [
-                            "eid108",
-                            "left",
-                            7740,
-                            500,
-                            "linear",
-                            "${texto07_03_01}",
-                            '45px',
-                            '-905px'
-                        ],
-                        [
-                            "eid92",
+                            "eid26",
                             "opacity",
-                            4327,
+                            1700,
                             400,
                             "linear",
-                            "${texto07_02_04}",
+                            "${imagem07_01_02}",
                             '0.000000',
                             '1'
                         ],
                         [
-                            "eid93",
+                            "eid27",
                             "opacity",
-                            5022,
+                            2100,
                             400,
                             "linear",
-                            "${texto07_02_04}",
+                            "${imagem07_01_02}",
                             '1',
                             '0.000000'
                         ],
@@ -1015,54 +1084,64 @@
                             'none'
                         ],
                         [
-                            "eid26",
+                            "eid92",
                             "opacity",
-                            1700,
+                            4327,
                             400,
                             "linear",
-                            "${imagem07_01_02}",
+                            "${texto07_02_04}",
                             '0.000000',
                             '1'
                         ],
                         [
-                            "eid27",
+                            "eid93",
                             "opacity",
-                            2100,
+                            5022,
                             400,
                             "linear",
-                            "${imagem07_01_02}",
+                            "${texto07_02_04}",
                             '1',
                             '0.000000'
                         ],
                         [
-                            "eid73",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${texto07_02_02}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid74",
-                            "display",
-                            3490,
-                            0,
-                            "linear",
-                            "${texto07_02_02}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid75",
-                            "display",
+                            "eid105",
+                            "left",
                             6245,
-                            0,
+                            500,
                             "linear",
-                            "${texto07_02_02}",
-                            'block',
-                            'none'
+                            "${texto07_03_01}",
+                            '-905px',
+                            '45px'
+                        ],
+                        [
+                            "eid106",
+                            "left",
+                            6745,
+                            100,
+                            "linear",
+                            "${texto07_03_01}",
+                            '45px',
+                            '35px'
+                        ],
+                        [
+                            "eid107",
+                            "left",
+                            7640,
+                            100,
+                            "linear",
+                            "${texto07_03_01}",
+                            '35px',
+                            '45px'
+                        ],
+                        [
+                            "eid108",
+                            "left",
+                            7740,
+                            500,
+                            "linear",
+                            "${texto07_03_01}",
+                            '45px',
+                            '-905px'
                         ],
                         [
                             "eid32",
@@ -1095,24 +1174,14 @@
                             'none'
                         ],
                         [
-                            "eid111",
-                            "opacity",
-                            6845,
-                            400,
+                            "eid1",
+                            "display",
+                            8895,
+                            0,
                             "linear",
-                            "${imagem07_03_01}",
-                            '0.000000',
-                            '1'
-                        ],
-                        [
-                            "eid112",
-                            "opacity",
-                            7245,
-                            400,
-                            "linear",
-                            "${imagem07_03_01}",
-                            '1',
-                            '0.000000'
+                            "${borda}",
+                            'block',
+                            'none'
                         ]
                     ]
                 }
@@ -1129,10 +1198,10 @@
                         {
                             rect: ['0px', '0px', '385px', '121px', 'auto', 'auto'],
                             font: ['Verdana, Geneva, sans-serif', [20, 'px'], 'rgba(53,53,53,1.00)', '400', 'none solid rgb(46, 112, 159)', 'normal', 'break-word', ''],
-                            text: 'O movimento negro ou os movimentos negros, como alguns designam, têm como marco principal, o MNU (Movimento Negro Unificado), criado em 1978. A denúncia do “mito da democracia racial” foi elemento fundamental para a constituição desse movimento considerado pelos militantes como popular e democrático se comparado aos anteriores formados (Pereira, 2010 p98).',
+                            align: 'justify',
                             id: 'Text4Copy',
                             textStyle: ['', '', '27px', ''],
-                            align: 'justify',
+                            text: 'O movimento negro ou os movimentos negros, como alguns designam, têm como marco principal, o MNU (Movimento Negro Unificado), criado em 1978. A denúncia do “mito da democracia racial” foi elemento fundamental para a constituição desse movimento considerado pelos militantes como popular e democrático se comparado aos anteriores formados (Pereira, 2010 p98).',
                             type: 'text'
                         },
                         {
@@ -1170,10 +1239,10 @@
                         {
                             type: 'text',
                             rect: ['0px', '3px', '875px', '25px', 'auto', 'auto'],
-                            align: 'justify',
-                            id: 'Text1',
                             textStyle: ['', '', '27px', ''],
+                            id: 'Text1',
                             text: 'O movimento negro organizado “africanizou-se”. A partir daquele instante, as lides contra o racismo tinham como uma das premissas a promoção de uma identidade étnica específica do negro. O discurso tanto da negritude quanto do resgate das raízes ancestrais norteou o comportamento da militância. (Domingues, 2007, p-116) .',
+                            align: 'justify',
                             font: ['Verdana, Geneva, sans-serif', [20, 'px'], 'rgba(52,52,52,1)', '400', 'none solid rgb(52, 52, 52)', 'normal', 'break-word', '']
                         },
                         {
@@ -1211,10 +1280,10 @@
                         {
                             type: 'text',
                             rect: ['0px', '0px', '484px', '25px', 'auto', 'auto'],
-                            align: 'justify',
-                            id: 'Text',
                             textStyle: ['', '', '27px', ''],
+                            id: 'Text',
                             text: 'Muitos blocos Afros passam a falar o linguajar da periferia e o estilo rap passou a criar letras de músicas de protesto social e racial. Alguns adeptos desse estilo musical passaram a substituir o termo negro por preto, para distinguirem-se do movimento negro tradicional. Outros artistas brasileiros da MPB trataram nas suas músicas suas impressões sobre a questão racial no Brasil. Milton Nascimento e Fernando Brant compuseram a música Raça  relacionando raça à história da escravidão e à luta cotidiana que mulheres e homens negros travavam no Brasil. ',
+                            align: 'justify',
                             font: ['Verdana, Geneva, sans-serif', [20, 'px'], 'rgba(52,52,52,1)', '400', 'none solid rgb(52, 52, 52)', 'normal', 'break-word', '']
                         },
                         {
@@ -1252,10 +1321,10 @@
                         {
                             font: ['Verdana, Geneva, sans-serif', [20, 'px'], 'rgba(53,53,53,1.00)', '400', 'none solid rgb(46, 112, 159)', 'normal', 'break-word', ''],
                             type: 'text',
-                            textStyle: ['', '', '27px', ''],
+                            align: 'justify',
                             id: 'Text4Copy',
                             text: 'Por fim, alguns ativistas passaram a criar campanhas como 100% negro buscando afirmar sua própria identidade. A luta do povo negro não para. Em agosto deste ano de 2014, a II Marcha Nacional Contra o Genocídio do Povo Negro levou as ruas mais de 60 mil pessoas  que denunciaram o racismo e a violência estatal que continuam a fazer vítimas todos os anos.',
-                            align: 'justify',
+                            textStyle: ['', '', '27px', ''],
                             rect: ['0px', '0px', '897px', '121px', 'auto', 'auto']
                         },
                         {

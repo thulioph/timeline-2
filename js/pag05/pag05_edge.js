@@ -38,7 +38,7 @@
                         {
                             id: 'titulo05',
                             type: 'text',
-                            rect: ['77px', '35px', '835px', '24px', 'auto', 'auto'],
+                            rect: ['77px', '35px', '840px', '24px', 'auto', 'auto'],
                             opacity: '0',
                             text: "A DEMOCRACIA RACIAL E A PRIMEIRA FASE DO MOVIMENTO NEGRO NO BRASIL",
                             align: "center",
@@ -67,6 +67,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['18px', '153px', '340px', '410px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem05_01_01.png",'0px','0px']
                         },
                         {
@@ -84,6 +85,7 @@
                             display: 'none',
                             type: 'image',
                             rect: ['737px', '271px', '215px', '230px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem05_01_03.png",'0px','0px']
                         },
                         {
@@ -111,6 +113,7 @@
                             display: 'none',
                             type: 'rect',
                             rect: ['646px', '63px', '135px', '29px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             opacity: '0',
                             fill: ["rgba(192,192,192,1)"],
                             stroke: [0,"rgb(0, 0, 0)","none"]
@@ -127,18 +130,22 @@
                         },
                         {
                             id: 'imagem05_02_01',
+                            display: 'none',
                             type: 'image',
                             rect: ['18px', '158px', '885px', '340px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"imagem05_02_01.png",'0px','0px']
                         },
                         {
                             id: 'imagem05_02_02',
+                            display: 'none',
                             type: 'image',
                             rect: ['616px', '211px', '250px', '370px', 'auto', 'auto'],
+                            cursor: 'pointer',
                             fill: ["rgba(0,0,0,0)",im+"imagem05_02_02.png",'0px','0px']
                         },
                         {
                             id: 'texto05_02_02',
+                            display: 'none',
                             type: 'text',
                             rect: ['100px', '315px', '452px', '25px', 'auto', 'auto'],
                             text: "Estado Novo é o nome do regime político brasileiro fundado por Getúlio Vargas em 10 de novembro de 1937, que durou até 29 de outubro de 1945, que é caracterizado pela centralização do poder, nacionalismo, anticomunismo e por seu autoritarismo.",
@@ -148,12 +155,14 @@
                         },
                         {
                             id: 'avancar',
+                            display: 'none',
                             type: 'image',
                             rect: ['936px', '45px', '20px', '41px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"avancar.png",'0px','0px']
                         },
                         {
                             id: 'voltar',
+                            display: 'none',
                             type: 'image',
                             rect: ['15px', '45px', '20px', '41px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"voltar.png",'0px','0px']
@@ -173,32 +182,32 @@
                     autoPlay: true,
                     data: [
                         [
-                            "eid37",
+                            "eid89",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${imagem05_01_03}",
+                            "${imagem05_02_01}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid28",
+                            "eid76",
                             "display",
-                            2000,
+                            4595,
                             0,
                             "linear",
-                            "${imagem05_01_03}",
+                            "${imagem05_02_01}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid29",
+                            "eid77",
                             "display",
-                            2795,
+                            5985,
                             0,
                             "linear",
-                            "${imagem05_01_03}",
+                            "${imagem05_02_01}",
                             'block',
                             'none'
                         ],
@@ -243,24 +252,24 @@
                             '0.000000'
                         ],
                         [
-                            "eid84",
-                            "display",
-                            4888,
-                            0,
+                            "eid34",
+                            "opacity",
+                            2000,
+                            400,
                             "linear",
-                            "${texto05_02_02}",
-                            'none',
-                            'block'
+                            "${texto05_01_03}",
+                            '0.000000',
+                            '1'
                         ],
                         [
-                            "eid85",
-                            "display",
-                            5683,
-                            0,
+                            "eid35",
+                            "opacity",
+                            2400,
+                            400,
                             "linear",
-                            "${texto05_02_02}",
-                            'block',
-                            'none'
+                            "${texto05_01_03}",
+                            '1',
+                            '0.000000'
                         ],
                         [
                             "eid41",
@@ -313,6 +322,16 @@
                             '0.000000'
                         ],
                         [
+                            "eid98",
+                            "width",
+                            5288,
+                            0,
+                            "linear",
+                            "${titulo05}",
+                            '840px',
+                            '840px'
+                        ],
+                        [
                             "eid11",
                             "left",
                             800,
@@ -353,32 +372,62 @@
                             '-905px'
                         ],
                         [
-                            "eid40",
+                            "eid37",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${imagem05_01_02}",
+                            "${imagem05_01_03}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid16",
+                            "eid28",
                             "display",
-                            1600,
+                            2000,
                             0,
                             "linear",
-                            "${imagem05_01_02}",
+                            "${imagem05_01_03}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid17",
+                            "eid29",
                             "display",
-                            3200,
+                            2795,
                             0,
                             "linear",
-                            "${imagem05_01_02}",
+                            "${imagem05_01_03}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid90",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${imagem05_02_02}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid80",
+                            "display",
+                            4888,
+                            0,
+                            "linear",
+                            "${imagem05_02_02}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid81",
+                            "display",
+                            5683,
+                            0,
+                            "linear",
+                            "${imagem05_02_02}",
                             'block',
                             'none'
                         ],
@@ -403,22 +452,62 @@
                             '0.000000'
                         ],
                         [
-                            "eid80",
+                            "eid72",
                             "display",
-                            4888,
+                            0,
                             0,
                             "linear",
-                            "${imagem05_02_02}",
+                            "${texto05_02_01}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid73",
+                            "display",
+                            3995,
+                            0,
+                            "linear",
+                            "${texto05_02_01}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid81",
+                            "eid74",
                             "display",
-                            5683,
+                            6590,
                             0,
                             "linear",
-                            "${imagem05_02_02}",
+                            "${texto05_02_01}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid92",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${avancar}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid94",
+                            "display",
+                            2400,
+                            0,
+                            "linear",
+                            "${avancar}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid96",
+                            "display",
+                            5288,
+                            0,
+                            "linear",
+                            "${avancar}",
                             'block',
                             'none'
                         ],
@@ -543,32 +632,32 @@
                             'none'
                         ],
                         [
-                            "eid72",
+                            "eid93",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${texto05_02_01}",
+                            "${voltar}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid73",
+                            "eid95",
                             "display",
-                            3995,
+                            5288,
                             0,
                             "linear",
-                            "${texto05_02_01}",
+                            "${voltar}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid74",
+                            "eid97",
                             "display",
-                            6590,
+                            7245,
                             0,
                             "linear",
-                            "${texto05_02_01}",
+                            "${voltar}",
                             'block',
                             'none'
                         ],
@@ -603,24 +692,14 @@
                             'none'
                         ],
                         [
-                            "eid34",
-                            "opacity",
-                            2000,
-                            400,
+                            "eid1",
+                            "display",
+                            7245,
+                            0,
                             "linear",
-                            "${texto05_01_03}",
-                            '0.000000',
-                            '1'
-                        ],
-                        [
-                            "eid35",
-                            "opacity",
-                            2400,
-                            400,
-                            "linear",
-                            "${texto05_01_03}",
-                            '1',
-                            '0.000000'
+                            "${borda}",
+                            'block',
+                            'none'
                         ],
                         [
                             "eid86",
@@ -753,32 +832,62 @@
                             '0.000000'
                         ],
                         [
-                            "eid1",
+                            "eid91",
                             "display",
-                            7245,
+                            0,
                             0,
                             "linear",
-                            "${borda}",
-                            'block',
+                            "${texto05_02_02}",
+                            'none',
                             'none'
                         ],
                         [
-                            "eid76",
+                            "eid84",
                             "display",
-                            4595,
+                            4888,
                             0,
                             "linear",
-                            "${imagem05_02_01}",
+                            "${texto05_02_02}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid77",
+                            "eid85",
                             "display",
-                            5985,
+                            5683,
                             0,
                             "linear",
-                            "${imagem05_02_01}",
+                            "${texto05_02_02}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid40",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${imagem05_01_02}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid16",
+                            "display",
+                            1600,
+                            0,
+                            "linear",
+                            "${imagem05_01_02}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid17",
+                            "display",
+                            3200,
+                            0,
+                            "linear",
+                            "${imagem05_01_02}",
                             'block',
                             'none'
                         ]
